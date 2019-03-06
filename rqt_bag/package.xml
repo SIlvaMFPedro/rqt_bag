@@ -62,10 +62,21 @@
   <build_depend>message_runtime</build_depend>
   <build_export_depend>message_runtime</build_export_depend>
 
+  <run_depend>message_runtime</run_depend>
+  <run_depend version_gte="0.2.19">python_qt_binding</run_depend>
+  <run_depend>python-rospkg</run_depend>
+  <run_depend>rosbag</run_depend>
+  <run_depend>rosgraph_msgs</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>rosnode</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend version_gte="0.2.12">rqt_gui</run_depend>
+  <run_depend>rqt_gui_py</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
     <!-- Other tools can request additional information be placed here -->
-
+    <architecture_independent/>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
   </export>
 </package>
